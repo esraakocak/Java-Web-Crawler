@@ -1,0 +1,332 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import movies.film;
+import java.util.List;
+import movies.database;
+import java.sql.*;
+import java.io.*;
+
+public final class details_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;  charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			"hata.jsp", true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write(" \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+
+    if (request.getParameter("id") != null) {
+        int id  =  Integer.parseInt(request.getParameter("id"));
+        database db = new database();
+        film filmlist = db.details(id);
+
+
+
+      out.write("\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("        <meta charset=\"utf-8\">\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n");
+      out.write("\n");
+      out.write("        <!-- CSS -->\n");
+      out.write("    <link rel=\"stylesheet\" href=\"css/bootstrap-reboot.min.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/bootstrap-grid.min.css\">\n");
+      out.write("            <link rel=\"stylesheet\" href=\"css/owl.carousel.min.css\">\n");
+      out.write("                <link rel=\"stylesheet\" href=\"css/jquery.mCustomScrollbar.min.css\">\n");
+      out.write("                    <link rel=\"stylesheet\" href=\"css/nouislider.min.css\">\n");
+      out.write("                        <link rel=\"stylesheet\" href=\"css/ionicons.min.css\">\n");
+      out.write("                            <link rel=\"stylesheet\" href=\"css/magnific-popup.css\">\n");
+      out.write("                                <link rel=\"stylesheet\" href=\"css/plyr.css\">\n");
+      out.write("                                    <link rel=\"stylesheet\" href=\"css/photoswipe.css\">\n");
+      out.write("                                        <link rel=\"stylesheet\" href=\"css/default-skin.css\">\n");
+      out.write("                                            <link rel=\"stylesheet\" href=\"css/main.css\">\n");
+      out.write("\n");
+      out.write("                                                <!-- Favicons -->\n");
+      out.write("                                                <link rel=\"icon\" type=\"image/png\" href=\"icon/favicon-32x32.png\" sizes=\"32x32\">\n");
+      out.write("                                                    <link rel=\"apple-touch-icon\" href=\"icon/favicon-32x32.png\">\n");
+      out.write("\n");
+      out.write("                                                        <meta name=\"description\" content=\"\">\n");
+      out.write("                                                        <meta name=\"keywords\" content=\"\">\n");
+      out.write("                                                        <meta name=\"author\" content=\"Dmitry Volkov\">\n");
+      out.write("                                                        <title>Film Fragman</title>\n");
+      out.write("                                                        </head>\n");
+      out.write("\n");
+      out.write("                                                        <body class=\"body\">\n");
+      out.write("                                                            <!-- header -->\n");
+      out.write("                                                            <header class=\"header\">\n");
+      out.write("                                                                <div class=\"container\">\n");
+      out.write("                                                                    <div class=\"row\">\n");
+      out.write("                                                                        <div class=\"col-12\">\n");
+      out.write("                                                                            <div class=\"header__content\">\n");
+      out.write("                                                                                <!-- header logo -->\n");
+      out.write("                                                                                  <a href=\"index.jsp\" class=\"header__logo\">\n");
+      out.write("                                                                                    <img src=\"./esra.jpg\" width=\"150px;\" height=\"55px;\" alt=\"\" >\n");
+      out.write("                                                                                </a>\n");
+      out.write("                                                                                <!-- end header logo -->\n");
+      out.write("\n");
+      out.write("                                                                                <!-- header nav -->\n");
+      out.write("                                                                                <ul class=\"header__nav\">\n");
+      out.write("                                                                                    <!-- dropdown -->\n");
+      out.write("                                                                               \n");
+      out.write("                                                                                    <!-- end dropdown -->\n");
+      out.write("\n");
+      out.write("                                                                                    <!-- dropdown -->\n");
+      out.write("                                                                              <li class=\"header__nav-item\">\n");
+      out.write("                                                                                        <a  href=\"index.jsp\" class=\"dropdown-toggle header__nav-link\" role=\"button\">Anasayfa</a>\n");
+      out.write("                                                                                    <!-- end dropdown -->\n");
+      out.write("\n");
+      out.write("                                                                                </ul>\n");
+      out.write("                                                                                <!-- end header nav -->\n");
+      out.write("\n");
+      out.write("                                                                                <!-- header auth -->\n");
+      out.write("                                                                       \n");
+      out.write("                                                                                <!-- end header auth -->\n");
+      out.write("\n");
+      out.write("                                                                                <!-- header menu btn -->\n");
+      out.write("                                                                                <button class=\"header__btn\" type=\"button\">\n");
+      out.write("                                                                                    <span></span>\n");
+      out.write("                                                                                    <span></span>\n");
+      out.write("                                                                                    <span></span>\n");
+      out.write("                                                                                </button>\n");
+      out.write("                                                                                <!-- end header menu btn -->\n");
+      out.write("                                                                            </div>\n");
+      out.write("                                                                        </div>\n");
+      out.write("                                                                    </div>\n");
+      out.write("                                                                </div>\n");
+      out.write("                                                            </header>\n");
+      out.write("                                               \n");
+      out.write("                                                      \n");
+      out.write("                                                            <!-- end header -->\n");
+      out.write("\n");
+      out.write("                                                            <!-- details -->\n");
+      out.write("                                                        <section class=\"section section--details section--bg\" data-bg=\"img/filmler/");
+      out.print(filmlist.getFilm_img());
+      out.write("\">\n");
+      out.write("                                                            <!-- details content -->\n");
+      out.write("                                                            <div class=\"container\">\n");
+      out.write("                                                                <div class=\"row\">\n");
+      out.write("                                                                    <!-- title -->\n");
+      out.write("                                                                    <div class=\"col-12\">\n");
+      out.write("                                                                        <h1 class=\"section__title section__title--mb\">");
+      out.print(filmlist.getFilm_adi());
+      out.write("</h1>\n");
+      out.write("                                                                    </div>\n");
+      out.write("                                                                    <!-- end title -->\n");
+      out.write("\n");
+      out.write("                                                                    <!-- content -->\n");
+      out.write("                                                                    <div class=\"col-12 col-xl-6\">\n");
+      out.write("                                                                        <div class=\"card card--details\">\n");
+      out.write("                                                                            <div class=\"row\">\n");
+      out.write("                                                                                <!-- card cover -->\n");
+      out.write("                                                                                <div class=\"col-12 col-sm-5 col-md-4 col-lg-3 col-xl-5\">\n");
+      out.write("                                                                                    <div class=\"card__cover\">\n");
+      out.write("                                                                                        <img src=\"img/filmler/");
+      out.print(filmlist.getFilm_img());
+      out.write("\" alt=\"\">\n");
+      out.write("                                                                                            <span class=\"card__rate card__rate--green\">");
+      out.print(filmlist.getPuan() );
+      out.write("</span><br>\n");
+      out.write("                                                                                            \n");
+      out.write("                                                                                    </div>\n");
+      out.write("                                                                                    <a href=\"");
+      out.print(filmlist.getFilm_fragman());
+      out.write("\" class=\"card__trailer\"><i class=\"icon ion-ios-play-circle\"></i> Watch trailer</a>\n");
+      out.write("                                                                                </div>\n");
+      out.write("                                                                                <!-- end card cover -->\n");
+      out.write("\n");
+      out.write("                                                                                <!-- card content -->\n");
+      out.write("                                                                                <div class=\"col-12 col-md-8 col-lg-9 col-xl-7\">\n");
+      out.write("                                                                                    <div class=\"card__content\">\n");
+      out.write("                                                                                        <ul class=\"card__meta\">\n");
+      out.write("                                                                                        \n");
+      out.write("                                                                                            <li><span>Cast:</span> <a href=\"#\">");
+      out.print(filmlist.getOyuncular_adi() );
+      out.write("</a>\n");
+      out.write("                                                                                                       <a href=\"#\">");
+      out.print(filmlist.getOyuncular_adi() );
+      out.write("</a></li>\n");
+      out.write("                                                                                            <li><span>Genre:</span> <a href=\"#\">Action</a>\n");
+      out.write("                                                                                                <a href=\"#\">");
+      out.print(filmlist.getFilm_tur() );
+      out.write("</a></li>\n");
+      out.write("                                                                                                <li><span>Puan :</span>");
+      out.print(filmlist.getPuan());
+      out.write(" </li>\n");
+      out.write("                                                                                            <li><span>Süresi:</span> 130 min</li>\n");
+      out.write("                                                                                            <li><span></span> <a href=\"#\"></a></li>\n");
+      out.write("                                                                                        </ul>\n");
+      out.write("                                                                                                <div class=\"card__description\"  >  <br>");
+      out.print(filmlist.getFilm_konu() );
+      out.write("</div>\n");
+      out.write("                                                                                    </div>\n");
+      out.write("                                                                                </div>\n");
+      out.write("                                                                                <!-- end card content -->\n");
+      out.write("                                                                            </div>\n");
+      out.write("                                                                        </div>\n");
+      out.write("                                                                    </div>\n");
+      out.write("                                                                    <!-- end content -->\n");
+      out.write("\n");
+      out.write("                                                                    <!-- player -->\n");
+      out.write("                                                                    <div class=\"col-12 col-xl-6\">\n");
+      out.write("                                                                        <video controls crossorigin playsinline poster=\"https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg\" id=\"player\">\n");
+      out.write("                                                                            <!-- Video files -->\n");
+      out.write("                                                                            <a href=\"");
+      out.print(filmlist.getFilm_fragman());
+      out.write("\" type=\"video/mp4\" size=\"576\"> </a>\n");
+      out.write("                                                                            <iframe width=640 height=360 src=\"");
+      out.print(filmlist.getFilm_fragman());
+      out.write("\" frameborder=0 allowfullscreen></iframe>\n");
+      out.write("                                                               \n");
+      out.write("                                                                            <!-- Caption files -->\n");
+      out.write("                                                                     \n");
+      out.write("\n");
+      out.write("                                                                            <!-- Fallback for browsers that don't support the <video> element -->\n");
+      out.write("                                                                            <a href=\"https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4\" download>Download</a>\n");
+      out.write("                                                                        </video>\n");
+      out.write("                                                                    </div>\n");
+      out.write("                                                                    <!-- end player -->\n");
+      out.write("                                                                </div>\n");
+      out.write("                                                            </div>\n");
+      out.write("                                                            <!-- end details content -->\n");
+      out.write("                                                        </section>\n");
+      out.write("                                                        <!-- end details -->\n");
+      out.write("\n");
+      out.write("                                                        <!-- content -->\n");
+      out.write("                                                 \n");
+      out.write("                                                        <!-- end content -->\n");
+      out.write("\n");
+      out.write("                                                        <!-- footer -->\n");
+      out.write("                                                   \n");
+      out.write("                                                        <!-- end footer -->\n");
+      out.write("\n");
+      out.write("                                                        <!-- Root element of PhotoSwipe. Must have class pswp. -->\n");
+      out.write("                                                        <div class=\"pswp\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n");
+      out.write("\n");
+      out.write("                                                            <!-- Background of PhotoSwipe. \n");
+      out.write("                                                                    It's a separate element, as animating opacity is faster than rgba(). -->\n");
+      out.write("                                                            <div class=\"pswp__bg\"></div>\n");
+      out.write("\n");
+      out.write("                                                            <!-- Slides wrapper with overflow:hidden. -->\n");
+      out.write("                                                            <div class=\"pswp__scroll-wrap\">\n");
+      out.write("\n");
+      out.write("                                                                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->\n");
+      out.write("                                                                <!-- don't modify these 3 pswp__item elements, data is added later on. -->\n");
+      out.write("                                                                <div class=\"pswp__container\">\n");
+      out.write("                                                                    <div class=\"pswp__item\"></div>\n");
+      out.write("                                                                    <div class=\"pswp__item\"></div>\n");
+      out.write("                                                                    <div class=\"pswp__item\"></div>\n");
+      out.write("                                                                </div>\n");
+      out.write("\n");
+      out.write("                                                                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->\n");
+      out.write("                                                                <div class=\"pswp__ui pswp__ui--hidden\">\n");
+      out.write("\n");
+      out.write("                                                                    <div class=\"pswp__top-bar\">\n");
+      out.write("\n");
+      out.write("                                                                        <!--  Controls are self-explanatory. Order can be changed. -->\n");
+      out.write("\n");
+      out.write("                                                                        <div class=\"pswp__counter\"></div>\n");
+      out.write("\n");
+      out.write("                                                                        <button class=\"pswp__button pswp__button--close\" title=\"Close (Esc)\"></button>\n");
+      out.write("\n");
+      out.write("                                                                        <button class=\"pswp__button pswp__button--fs\" title=\"Toggle fullscreen\"></button>\n");
+      out.write("\n");
+      out.write("                                                                        <!-- Preloader -->\n");
+      out.write("                                                                        <div class=\"pswp__preloader\">\n");
+      out.write("                                                                            <div class=\"pswp__preloader__icn\">\n");
+      out.write("                                                                                <div class=\"pswp__preloader__cut\">\n");
+      out.write("                                                                                    <div class=\"pswp__preloader__donut\"></div>\n");
+      out.write("                                                                                </div>\n");
+      out.write("                                                                            </div>\n");
+      out.write("                                                                        </div>\n");
+      out.write("                                                                    </div>\n");
+      out.write("\n");
+      out.write("                                                                    <button class=\"pswp__button pswp__button--arrow--left\" title=\"Previous (arrow left)\"></button>\n");
+      out.write("\n");
+      out.write("                                                                    <button class=\"pswp__button pswp__button--arrow--right\" title=\"Next (arrow right)\"></button>\n");
+      out.write("\n");
+      out.write("                                                                    <div class=\"pswp__caption\">\n");
+      out.write("                                                                        <div class=\"pswp__caption__center\"></div>\n");
+      out.write("                                                                    </div>\n");
+      out.write("                                                                </div>\n");
+      out.write("                                                            </div>\n");
+      out.write("                                                        </div>\n");
+      out.write("\n");
+      out.write("                                                        <!-- JS -->\n");
+      out.write("                                                        <script src=\"js/jquery-3.5.1.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/bootstrap.bundle.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/owl.carousel.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/jquery.magnific-popup.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/jquery.mousewheel.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/jquery.mCustomScrollbar.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/wNumb.js\"></script>\n");
+      out.write("                                                        <script src=\"js/nouislider.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/plyr.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/photoswipe.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/photoswipe-ui-default.min.js\"></script>\n");
+      out.write("                                                        <script src=\"js/main.js\"></script>\n");
+      out.write("                                                        </body>\n");
+      out.write("\n");
+      out.write("                                                        </html>\n");
+      out.write("                                                        \n");
+      out.write("                                                        ");
+}
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
